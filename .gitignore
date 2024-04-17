@@ -1,0 +1,12 @@
+/node_modules
+build
+/public
+/public/assets/images/posters/*
+/src/storage/videos/*
+/src/storage/*.mp4
+/public/templates
+*.mp4
+*.mp3
+yarn.lock
+.env
+.zip

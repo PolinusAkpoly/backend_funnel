@@ -1,0 +1,116 @@
+[
+    {
+        "userId": "6123456789abcdef0123456",
+        "productId": "abcdef012345678912345678",
+        "note": 4,
+        "comment": "J'adore ce produit ! Il répond parfaitement à mes attentes et sa qualité est excellente."
+    },
+    {
+        "userId": "abcdef012345678912345678",
+        "productId": "6123456789abcdef0123456",
+        "note": 5,
+        "comment": "Ce produit est incroyable ! Je le recommande vivement à tous ceux qui recherchent une solution efficace."
+    },
+    {
+        "userId": "0123456789abcdefabcdef",
+        "productId": "abcdef012345678912345678",
+        "note": 3,
+        "comment": "Ce produit est moyen. Il fonctionne correctement, mais je m'attendais à mieux."
+    },
+    {
+        "userId": "abcdef012345678912345678",
+        "productId": "0123456789abcdefabcdef",
+        "note": 2,
+        "comment": "Je suis déçu par ce produit. Il ne correspond pas du tout à mes attentes et sa durabilité laisse à désirer."
+    },
+    {
+        "userId": "0123456789abcdefabcdef",
+        "productId": "abcdef012345678912345678",
+        "note": 4,
+        "comment": "Un bon produit dans l'ensemble. Il fait bien son travail, mais je trouve qu'il est un peu cher."
+    },
+    {
+        "userId": "abcdef012345678912345678",
+        "productId": "0123456789abcdefabcdef",
+        "note": 5,
+        "comment": "Je suis ravi de cet achat ! Ce produit est tout simplement parfait et son prix est très raisonnable."
+    },
+    {
+        "userId": "0123456789abcdefabcdef",
+        "productId": "abcdef012345678912345678",
+        "note": 3,
+        "comment": "Je n'ai pas été impressionné par ce produit. Il ne fonctionne pas aussi bien que je l'espérais."
+    },
+    {
+        "userId": "0123456789abcdefabcdef",
+        "productId": "0123456789abcdefabcdef",
+        "note": 4,
+        "comment": "Ce produit est très pratique et facile à utiliser. Je suis satisfait de mon achat."
+      },
+      {
+        "userId": "abcdef012345678912345678",
+        "productId": "abcdef012345678912345678",
+        "note": 5,
+        "comment": "C'est le meilleur produit que j'ai jamais acheté ! Il dépasse toutes mes attentes."
+      },
+      {
+        "userId": "6123456789abcdef0123456",
+        "productId": "abcdef012345678912345678",
+        "note": 3,
+        "comment": "Ce produit est moyen. Il fonctionne correctement, mais il manque de certaines fonctionnalités."
+      },
+      {
+        "userId": "0123456789abcdefabcdef",
+        "productId": "6123456789abcdef0123456",
+        "note": 2,
+        "comment": "Je ne recommande pas du tout ce produit. Il est de mauvaise qualité et ne fonctionne pas correctement."
+      },
+      {
+        "userId": "abcdef012345678912345678",
+        "productId": "0123456789abcdefabcdef",
+        "note": 4,
+        "comment": "J'aime beaucoup ce produit. Il est durable et fiable, et il correspond à mes besoins."
+      },
+      {
+        "userId": "0123456789abcdefabcdef",
+        "productId": "abcdef012345678912345678",
+        "note": 5,
+        "comment": "Je suis totalement satisfait de cet achat ! Ce produit est vraiment exceptionnel."
+      },
+      {
+        "userId": "abcdef012345678912345678",
+        "productId": "0123456789abcdefabcdef",
+        "note": 3,
+        "comment": "Ce produit est correct, mais je m'attendais à mieux pour son prix."
+      },
+      {
+        "userId": "0123456789abcdefabcdef",
+        "productId": "abcdef012345678912345678",
+        "note": 4,
+        "comment": "Très bon produit ! Il remplit parfaitement sa fonction et sa qualité est remarquable."
+      },
+      {
+        "userId": "abcdef012345678912345678",
+        "productId": "0123456789abcdefabcdef",
+        "note": 5,
+        "comment": "Je suis extrêmement satisfait de ce produit. Il dépasse toutes mes attentes."
+      },
+      {
+        "userId": "0123456789abcdefabcdef",
+        "productId": "0123456789abcdefabcdef",
+        "note": 3,
+        "comment": "Ce produit est moyen. Il fonctionne correctement, mais il n'est pas exceptionnel."
+      },
+      {
+        "userId": "abcdef012345678912345678",
+        "productId": "0123456789abcdefabcdef",
+        "note": 2,
+        "comment": "Je suis très déçu de ce produit. Il ne tient pas ses promesses et sa qualité est médiocre."
+      },
+      {
+        "userId": "0123456789abcdefabcdef",
+        "productId": "abcdef012345678912345678",
+        "note": 4,
+        "comment": "Ce produit est bon, mais je trouve qu'il est un peu cher pour ce qu'il offre."
+      }
+]

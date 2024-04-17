@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Rest Full {{ name }}</title>
+    <meta name="description" content="{{ description }}">
+    <link rel="shortcut icon" href="{{ logo }}" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/stylesheets/style.css">
+</head>
+
+<body>
+    <nav class="navbar sticky-top shadow navbar-expand-lg">
+        <div class="container-fluid">
+            <div>
+
+                <img class="shadow" src="{{ logo }}" alt="" width="20">
+                <span>API Rest Full : {{ name }}</span>
+            </div>
+        
+        </div>
+      </nav>
+
+      <div class="container">
+            <h1>API : {{ name }}</h1>
+            <p class="text-center">
+                {{
+                    description
+                }}
+            </p>
+          <ul>
+      
+              {% for file in files %}
+              <li class="controller-item">
+                  <div class="controller-name">
+      
+                      {{ file.name }}
+                      
+                  </div>
+                  <ul class="routes-list">
+                      {% for data in file.datas %}
+                      <li class="routes-list-item ">
+                          <div class="flex aic b">
+                              <div class="routes-list-method {{ data.className }}">
+                                  {{data.method}}
+                              </div>
+                              <form action="{{data.path}}" method="POST">
+                                  <input type="hidden" name="method" value="{{data.method}}">
+                                  <button>
+                                     {{host}}/{{data.path}}
+                                  </button>
+                              </form>
+      
+                          </div>
+      
+                          <code class="content">
+      
+                                      </code>
+      
+      
+      
+                      </li>
+                      {% endfor %}
+                  </ul>
+              </li>
+              {% endfor %}
+          </ul>
+      </div>
+
+      <footer>
+        <h2>Backend {{ name }}</h2>
+      </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+        integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+        integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+        crossorigin="anonymous"></script>
+    <script>
+
+        const forms = Array.from(document.querySelectorAll("form"))
+
+        const getData = async (url, method, data) => {
+            const options = { method: method }
+            if (data) {
+                options.body = JSON.stringify(data)
+            }
+            let request = await fetch(url, options)
+
+            return await request.json()
+        }
+        // querySelector(".content").addEventListener("click", ()=>{
+        //     event.target.style.display = "none"
+        // })
+        forms.forEach(form => {
+            form.addEventListener("submit", async (event) => {
+                event.preventDefault()
+                const url = form.action
+                const method = form.querySelector("input").value
+
+                if (form.parentNode.parentNode.querySelector(".content").innerText !== "") {
+                    form.parentNode.parentNode.querySelector(".content").innerText = ""
+                    return
+                }
+
+
+
+                const data = await getData(url, method)
+
+                // form.parentNode.parentNode
+                // querySelector(".content").innerHTML = data.toString()
+                form.parentNode.parentNode.querySelector(".content").classList.toggle("none")
+                form.parentNode.parentNode.querySelector(".content").innerHTML = "<pre>" + JSON.stringify(data, null, 4) + "</pre>"
+                console.log({ url, method });
+            })
+        });
+    </script>
+</body>
+
+</html>
